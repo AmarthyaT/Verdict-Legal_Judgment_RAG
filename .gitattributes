@@ -1,0 +1,2 @@
+pdfs/grater[[:space:]]bengaluru[[:space:]]governence[[:space:]]bill.pdf filter=lfs diff=lfs merge=lfs -text
+chroma_store1/chroma.sqlite3 filter=lfs diff=lfs merge=lfs -text
