@@ -1,0 +1,47 @@
+# Python virtual environments
+venv/
+venv312/
+.venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment files and credentials
+.env
+a.env
+*.env
+.streamlit/secrets.toml
+
+# Private and non-uploadable files
+VERDICT_revised_paper.pdf
+
+# Project logs and temp files
+*.log
+renaming_log.txt
+extraction_errors.txt
+rag.txt
+unique_case_names.txt
+tempCodeRunnerFile.py
+
+# Editor / IDE configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Node modules (present in the workspace)
+node_modules/
+
+# OS generated files
+desktop.ini
+Thumbs.db

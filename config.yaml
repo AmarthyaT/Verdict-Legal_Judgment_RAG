@@ -1,0 +1,12 @@
+cookie:
+  expiry_days: 30
+  key: rag_cookie_key
+credentials:
+  usernames:
+    legal_analyst:
+      email: analyst@law.com
+      name: Legal Analyst
+      password: $2b$12$Kk27eK3N8G6P3T8Z3T6.1u7s3Y6t5Y6e1E5U6O6V6W6X6Y5Z4A3B2C1D0E0F0G
+preauthorized:
+  emails:
+  - analyst@law.com
