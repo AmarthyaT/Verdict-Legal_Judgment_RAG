@@ -10,19 +10,17 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Test cache
 .pytest_cache/
 .ipynb_checkpoints/
 
-# Environment files and credentials
+# Environment files and secrets (do NOT ignore .env if you want it tracked, usually you ignore)
 .env
-a.env
 *.env
 .streamlit/secrets.toml
 
-# Private and non-uploadable files
-VERDICT_revised_paper.pdf
-
-# Project logs and temp files
+# Logs and temporary files
 *.log
 renaming_log.txt
 extraction_errors.txt
@@ -30,7 +28,7 @@ rag.txt
 unique_case_names.txt
 tempCodeRunnerFile.py
 
-# Editor / IDE configurations
+# IDE / editor configs
 .vscode/
 .idea/
 *.suo
@@ -39,9 +37,9 @@ tempCodeRunnerFile.py
 *.sln
 *.swp
 
-# Node modules (present in the workspace)
+# Node modules (if not needed for runtime)
 node_modules/
 
 # OS generated files
-desktop.ini
+Desktop.ini
 Thumbs.db
