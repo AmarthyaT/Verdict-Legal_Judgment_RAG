@@ -1,34 +1,22 @@
-# Python virtual environments
+# -------------------------------------------------
+# Python virtual‑environment folders
 venv/
 venv312/
+.env/
+.env*/
 .venv/
 env/
 ENV/
 
-# Python cache and compiled files
+# Python compiled/cache files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 
-# Test cache
-.pytest_cache/
+# Test cache / notebooks
 .ipynb_checkpoints/
+.pytest_cache/
 
-# Environment files and secrets (do NOT ignore .env if you want it tracked, usually you ignore)
-.env
-*.env
-.streamlit/secrets.toml
-
-# Logs and temporary files
-*.log
-renaming_log.txt
-extraction_errors.txt
-rag.txt
-unique_case_names.txt
-tempCodeRunnerFile.py
-
-# IDE / editor configs
+# IDE & editor configuration
 .vscode/
 .idea/
 *.suo
@@ -37,9 +25,18 @@ tempCodeRunnerFile.py
 *.sln
 *.swp
 
-# Node modules (if not needed for runtime)
+# Node / front‑end artefacts (if any)
 node_modules/
 
 # OS generated files
+.DS_Secret
 Desktop.ini
 Thumbs.db
+
+# Log / temporary runtime files you don’t need in source control
+*.log
+renaming_log.txt
+extraction_errors.txt
+rag.txt
+unique_case_names.txt
+tempCodeRunnerFile.py
