@@ -7,3 +7,5 @@ venv312/
 .venv/
 env/
 ENV/
+chroma_store_BORE_06_27/
+data/
