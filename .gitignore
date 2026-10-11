@@ -7,36 +7,3 @@ venv312/
 .venv/
 env/
 ENV/
-
-# Python compiled/cache files
-__pycache__/
-*.py[cod]
-
-# Test cache / notebooks
-.ipynb_checkpoints/
-.pytest_cache/
-
-# IDE & editor configuration
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
-
-# Node / front‑end artefacts (if any)
-node_modules/
-
-# OS generated files
-.DS_Secret
-Desktop.ini
-Thumbs.db
-
-# Log / temporary runtime files you don’t need in source control
-*.log
-renaming_log.txt
-extraction_errors.txt
-rag.txt
-unique_case_names.txt
-tempCodeRunnerFile.py
