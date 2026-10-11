@@ -9,3 +9,6 @@ env/
 ENV/
 chroma_store_BORE_06_27/
 data/
+*.sqlite3
+data/chroma_store/
+experimental/chroma_store*
