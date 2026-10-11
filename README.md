@@ -212,11 +212,3 @@ For details on the evaluation methodology, testing for hallucination traps, and 
 
 ---
 
-## 👥 Contributors
-
-*   **Thammappa Gari Amarthya** (1AY23CD066)
-*   **Rishik Raj G** (1AY23CD051)
-*   **Vishal Raj T** (1AY23CD070)
-*   **Thammisetty Premsagar** (1AY23CD067)
-*   *Under the Guidance of:* **Mr. Abhijith S** (Assistant Professor, CSE-DS, Acharya Institute of Technology)
-
