@@ -8,11 +8,19 @@ from fuzzywuzzy import fuzz
 import streamlit as st
 
 # --- CONDITIONAL GOOGLE API IMPORTS ---
+# --- CONDITIONAL GOOGLE API IMPORTS ---
 try:
     from langchain_google_genai import ChatGoogleGenerativeAI
     HAS_GEMINI = True
 except ImportError:
     HAS_GEMINI = False
+
+# --- CONDITIONAL GROQ API IMPORTS ---
+try:
+    from langchain_groq import ChatGroq
+    HAS_GROQ = True
+except ImportError:
+    HAS_GROQ = False
 
 # --- LANGCHAIN IMPORTS ---
 from langchain_community.vectorstores import Chroma
@@ -76,6 +84,12 @@ class LegalRAGSystem:
                 google_api_key=self.api_key,
                 temperature=0.1
             )
+        elif self.model_mode == "Groq API":
+            if not HAS_GROQ:
+                raise ImportError("langchain-groq is not installed. Please run: pip install langchain-groq")
+            if not self.api_key:
+                raise ValueError("Groq API Key is required for Groq API Mode.")
+            self.llm = ChatGroq(model=self.model_name, api_key=self.api_key)
         else:
             # Local Ollama Mode
             self.llm = Ollama(model=self.model_name)
@@ -585,7 +599,7 @@ def main():
     # Engine Selection
     model_mode = st.sidebar.selectbox(
         "Select Generation Engine:",
-        ["Local Models (Ollama)", "Cloud API (Gemini)"]
+        ["Local Models (Ollama)", "Cloud API (Gemini)", "Groq API"]
     )
     
     # Conditional Model Names
